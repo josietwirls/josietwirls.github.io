@@ -1,3 +1,5 @@
+
+
 /* ---------- Global ---------- */
 
 * {
@@ -19,7 +21,53 @@ body {
     width: min(1000px, 90%);
     margin: auto;
 }
+nav {
 
+    position: sticky;
+    top: 0;
+
+    background: #0d1117dd;
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #30363d;
+
+    z-index: 100;
+}
+
+nav .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 70px;
+}
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 35px;
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .2s;
+}
+
+nav a:hover {
+
+    color: #58a6ff;
+}
 /* ---------- Hero ---------- */
 
 header {
